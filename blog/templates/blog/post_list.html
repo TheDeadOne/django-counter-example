@@ -1,0 +1,17 @@
+{% load counter %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Статьи</title>
+    </head>
+    <body>
+        {% for object in object_list %}
+        <div style="border: 1px solid gray; margin: 15px; padding: 15px;">
+            <h4>{{ object.title }}</h4>
+            {{ object.text|linebreaks|truncatewords_html:25 }}
+            <span><a href="{{ object.get_absolute_url }}">Подробнее</a></span>
+            <span style="float: right;">Просмотров: {% page_hits object.get_absolute_url %}</span>
+        </div>
+        {% endfor %}
+    </body>
+</html>
