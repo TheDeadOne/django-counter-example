@@ -16,4 +16,4 @@
 
 [![Скриншот][1]][1]
 
-  [1]: https://i.stack.imgur.com/fm2QW.png
+  [1]: https://habrastorage.org/webt/67/54/0f/67540f3ff265a865222124.png
